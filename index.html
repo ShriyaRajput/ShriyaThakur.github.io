@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -109,6 +110,25 @@
   transform: scale(1.1);
 }
 
+.skills-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+	justify-content: center;
+	align-items: center;
+    font-size: 48px; /* icon size */
+}
+.skills-logos img, 
+.skills-logos i {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.2s;
+}
+.skills-logos img:hover, 
+.skills-logos i:hover {
+    transform: scale(1.2);
+}
+
 
 </style>
 
@@ -160,6 +180,7 @@
 						// Create an array of typing text
 						const typingTexts = [
 						'Python Developer  ',
+						'SQL Developer  ',
 						'Data Analyst  ',
 						'AI/ML Engineer   ',
 						'Data Engineer   ',
@@ -186,15 +207,15 @@
 
 						</script>
 
-						<br>
-						<br>
+						<!-- <br>
+						<br> -->
 			            <!-- <h2>A Senior Data Analyst</h2> -->
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
 			            <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a>  -->
-							<a href="https://www.github.com/ShriyaRajput" class="btn btn-white btn-outline-primary py-3 px-4">
-           					 My Works
-        					</a></p>
+						<div>
+							<a href="https://github.com/ShriyaRajput" target="_blank" class="btn btn-white btn-outline-primary py-3 px-4">My Works</a>
+						</div>
 		            </div>
 		          </div>
 	        	</div>
@@ -205,12 +226,12 @@
 
 
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
+    <!-- <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container"> -->
+			<!-- <div class="row">
+				<div class="row d-flex align-items-stretch"> -->
+				<!-- <div class="row ds-flex"> -->
+					<!-- <div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
 							<div class="overlay">
 								<div class="row">
@@ -218,9 +239,9 @@
 									  <div class="profile">
 										<img src="images/Profile1.jpeg" class="img-fluid rounded b-shadow-a" alt="">
 									  </div>
-									</div>
+									</div> -->
 									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
+									<!-- <div class="col-sm-6 col-md-7">
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Shriya Thakur</span></p>
 										<p><span class="title-s">Job Role: </span> <span>Data Process Executive</span></p>
@@ -228,65 +249,28 @@
 										<p><span class="title-s">Address: </span> <span>Rajnandgaon, Chhattisgarh, India</span></p>
 									  </div>
 									</div>
-								  </div>
+								  </div> -->
 
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>AI/ML Models</span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>Flask</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
+								
+								<!-- </div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
+					<section class="ftco-section ftco-no-pb"  id="about-section">
+						<!-- <div class="row justify-content-start pb-3"> -->
+						<div class="container">
 							<div class="col-md-12 heading-section ftco-animate">
+								<div class="row justify-content-center pb-5">
+					          <div class="col-md-10 heading-section text-center ftco-animate">
 								
-								<h1 class="big">About</h1>
+								<h1 class="big big-2">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>Result-driven Python Web Developer with 1+ years of experience in developing and deploying high-performance web 
-									applications. Skilled in integrating AI/ML models (TensorFlow, Pytorch, Scikit-learn) and large language models (LLMs) 
-									into web platforms using Flask frameworks. Strong analytical thinker with a passion for solving real-world 
-									challenges, writing clean code, and contributing to innovative projects. Fluent in English and eager to collaborate 
-									within cross-functional teams. .</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
+								<p>Results-driven professional with 1+ years of experience in data analysis, application development, and AI/ML integration. Skilled in Python, SQL, and advanced libraries such as TensorFlow, PyTorch, Scikit-learn, NumPy, and Pandas. Experienced in designing and deploying scalable web solutions using Flask and Django, as well as integrating large language models (LLMs) into practical applications. Strong background in data visualization (Power BI, Tableau, Excel) and MIS reporting for actionable business insights. Adept at solving real-world challenges with clean, efficient code and a structured analytical approach. Eager to contribute to innovative projects, support data-driven decision-making, and collaborate within cross-functional teams.</p>
+								<!-- <ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><span>Profile:</span> <span>Data Analyst | AI/ML Enthusiast</span></li>
-									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
 									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology in Computer Science and Engineering</span></li>
 									<li class="d-flex"><span>Language:</span> <span> Python, Flask, HTML, CSS, JavaScript</span></li>
 									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, StreamLit, Excel Dashboards, Spendata (Spend Analysis) &amp; Tableau</span></li>
@@ -295,21 +279,77 @@
 									<li class="d-flex"><span>Other Skills:</span> <span>Excel, Git, VBA, Python Scripting &amp; Workflow Automation </span></li>
 									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
 									
-								</ul>
+								</ul> -->
+
+								<div class="row justify-content-center mt-5">
+									<div class="col-md-6 text-center ftco-animate">
+										<p><a href="https://www.linkedin.com/in/shriiiyathakur" class="btn btn-primary py-4 px-5">LinkedIn</a></p>
+								</div>
+								
+
+
+
+								<!-- <div class="skill-mf"> -->
+									<!-- <h1 class="big big-2">Skills</h1> -->
+
+									<div class="row">
+										<h1 class="big-4">Skills</h1>
+										
+										<div class="skills-logos">
+
+											<!-- Languages -->
+											<img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python" title="Python" width="48" height="48">
+											<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C" title="C" width="48" height="48">
+											<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C++_Logo.svg" alt="C++" title="C++" width="48" height="48">
+											<img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML" title="HTML" width="48" height="48">
+											<img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS" title="CSS" width="48" height="48">
+											<img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="JavaScript" title="JavaScript" width="48" height="48">
+												<!-- Python Libraries -->
+											<img src="https://seeklogo.com/images/N/numpy-logo-EF04157F19-seeklogo.com.png&format=png" title="NumPy" />
+											<img src="https://cdn.worldvectorlogo.com/logos/pandas.svg" title="Pandas" />
+											<img src="https://th.bing.com/th/id/OIP.gIuotIfx2JpwtfAd_NoLQwHaD8?w=295&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" title="Scikit-Learn" />
+											<img src="https://cdn.worldvectorlogo.com/logos/tensorflow-2.svg" title="TensorFlow" />
+
+											<!-- AI/LLM Tools -->
+											<img src="https://th.bing.com/th/id/OIP.4p7HYzy7HZMWSDMdLyhBcQHaEK?w=271&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" title="Ollama" />
+											<img src="https://www.bing.com/th/id/OIP.os-mIevdcbSaegyhFvNfxwHaHa?w=183&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" title="OpenAI" />
+											<img src="https://cdn.worldvectorlogo.com/logos/gemini-ai.svg" title="Gemini AI" />
+											<img src="https://th.bing.com/th/id/OIP.okI_hTyP8e3nB2i-ZJsK1AHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" title="LangChain" />
+											<img src="https://www.bing.com/th/id/OIP.oh-goAqLSyGtzJlemkT6wAHaHa?w=191&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" title="n8n" />
+
+											<!-- Databases & Tools -->
+											<img src="https://th.bing.com/th?q=Example+of+a+Logo+SQL&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" title="SQL" />
+											<img src="https://cdn.worldvectorlogo.com/logos/excel-4.svg" title="MS Excel" />
+											<img src="https://cdn.worldvectorlogo.com/logos/microsoft-sql-server-1.svg" title="SSMS" />
+
+											<!-- Frameworks -->
+											<img src="https://th.bing.com/th/id/OIP.beuovNRqw9fOAzFL1y_mxQHaEK?w=265&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" title="Flask" />
+											<img src="https://cdn.worldvectorlogo.com/logos/django.svg" title="Django" />
+											<img src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg" title="Fast API" />
+											<img src="https://th.bing.com/th/id/OIP.p8DBPpTFHS99Dk5vjqgvEwAAAA?w=303&h=121&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" title="REST API" />
+
+											<!-- BI & Visualization -->
+											<img src="https://www.bing.com/th/id/OIP.g30fRWZLK0nzLbmHB5DXegHaEK?w=263&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" title="Power BI" />
+											<img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" title="Tableau" />
+											<img src="https://www.bing.com/th/id/OIP.UmEsT_0c8oqn7B0TWRFunQHaGp?w=206&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" title="Streamlit" />
+											<img src="https://th.bing.com/th/id/OIP.nMVc6euXD3vArIQZW4DLUgAAAA?w=159&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" title="Spendata" />
+
+
+											<!-- Other Tools -->
+											<img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" title="Git"/>
+											<img src="https://www.bing.com/th/id/OIP.ExopCFEedUJCZ1zR_b455QHaHa?w=189&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" title="GitHub"/>
+											<img src="https://cdn.worldvectorlogo.com/logos/docker-4.svg" title="Docker" />
+
+										</div>
+									</div>
+
+
+
 							</div>
 						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<!-- <p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p> -->
-								<p><a href="https://www.linkedin.com/in/shriiiyathakur" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -324,7 +364,7 @@
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p>Data Analyst & Automation Developer with 1+ year of experience in developing automated solutions and applying AI techniques to solve business problems. Skilled in data analysis, process automation, machine learning model development, and delivering actionable insights to improve decision-making.</p>
+            <p>Data Analyst & Automation Developer with over 1 year of experience in building automated solutions, performing data-driven analysis, and applying AI/ML techniques to solve business problems. Proficient in process automation, data visualization, and machine learning model development, with a strong ability to deliver actionable insights that support strategic decision-making and improve business efficiency.</p>
           </div>
         </div>
 
@@ -338,7 +378,7 @@
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">Dec 2024-Aug 2025 </span>
-						<h2>Data Process Executive </h2>
+						<h2>Data Process Executive - Intern </h2>
 						<span class="position">Augtech Nextwealth</span>
 						<!-- <p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.  -->
 							<ul>
@@ -355,7 +395,7 @@
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">Jul 2024-Dec 2024 </span>
-						<h2>Data Analysis Intern</h2>
+						<h2>Data Analysis - Intern</h2>
 						<span class="position">Pantech.AI </span>
 						<!-- <p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands.  -->
 							<ul>
@@ -622,20 +662,20 @@
 
  
 	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
+<footer class="ftco-footer ftco-section">
+		<!-- <div class="container"> -->
+		  <!-- <div class="row"> -->
 			<div class="col-md-12 text-center">
-  
+			<p> Developed with ❤️ by Shriya Thakur </p>
 			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  
-	This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	Template from  <a href="https://colorlib.com" target="_blank">Colorlib</a>
 	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-				<p>| Developed with ❤️ by Shriya Thakur |</p>
+				
 			</div>
 		  </div>
 		</div>
-	  </footer>
+</footer>
 
 
   <!-- loader -->
